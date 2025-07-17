@@ -7,22 +7,25 @@
        nav {
         background-color: darkcyan; /* Background color of the navbar */
         overflow: hidden; /* Clear floats */
-        max-width: 25rem;
+        max-width: 50rem;
       }
       nav ul {
         list-style-type: none; /* Remove bullet points */
         padding: 0; /* Remove padding */
         /*margin: 0; /* Remove margin */
-        display: inline-block; /* Align items horizontally */
+        /*display: inline-block; /* Align items horizontally */
+        display:flex;
+      }
       }
       nav .navS {
         display: flex;
       }
-      nav li {
+      /*nav li {
         margin: 2px;
         display:inline;
         /*flex: 1; /* Equal width for each link */
-      }
+      }*/
+      
       nav a {
         display: block; /* Make links fill the list item */
         color: white; /* Text color */
@@ -46,10 +49,10 @@
       }
       @media(min-width:319px) and (max-width:480px){
         body{
-          background-color:powderblue;
+          background-color:red;
         }
         nav{
-          background-color:navyblue;
+          background-color:lightsalmon;
         }
       }
       .subH > div {
@@ -73,22 +76,20 @@
         position: relative;
         top: 50px;
       }
-      .container{
-        display:flex;
-      }
-      .card{
-         background: blue;
-        border: 1px solid white;
-        height: 5px;
+     
+      nav .card{
+        background: blue;
+        border: 5px solid white;
+        height: 20px;
         flex: 1;
       }
-      .first{
+      nav .first{
         flex: 1
       }
-      .second{
+      nav .second{
         flex: 1.5
       }
-      .third{
+      nav .third{
         flex: 0.5
       }
     </style>
