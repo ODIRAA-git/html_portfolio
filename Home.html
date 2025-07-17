@@ -7,6 +7,7 @@
        nav {
         background-color: darkcyan; /* Background color of the navbar */
         overflow: hidden; /* Clear floats */
+        max-width: 25rem;
       }
       nav ul {
         list-style-type: none; /* Remove bullet points */
@@ -19,7 +20,7 @@
       }
       nav li {
         margin: 2px;
-        display:inline-block;
+        display:inline;
         /*flex: 1; /* Equal width for each link */
       }
       nav a {
@@ -72,15 +73,33 @@
         position: relative;
         top: 50px;
       }
+      .container{
+        display:flex;
+      }
+      .card{
+         background: blue;
+        border: 1px solid white;
+        height: 5px;
+        flex: 1;
+      }
+      .first{
+        flex: 1
+      }
+      .second{
+        flex: 1.5
+      }
+      .third{
+        flex: 0.5
+      }
     </style>
   </head>
 
   <body>
     <nav>
-      <ul>
-        <li><a href="./public/about_me.html">ABOUT</a></li>
-        <li><a href="./public/contact_me.html">CONTACT</a></li>
-        <li><a href="./public/myR.html">MY RESUME</a></li>
+      <ul class="container">
+        <li class="card first"><a href="./public/about_me.html">ABOUT</a></li>
+        <li class="card second"><a href="./public/contact_me.html">CONTACT</a></li>
+        <li class=" card third"><a href="./public/myR.html">MY RESUME</a></li>
       </ul>
     </nav>
     <div class="subH">
