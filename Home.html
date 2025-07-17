@@ -4,11 +4,10 @@
     <meta charset="UTF-8" />
     <title>HOME</title>
     <style>
-       .cont {
+       nav {
         background-color: darkcyan; /* Background color of the navbar */
         overflow: hidden; /* Clear floats */
         max-width: 50rem;
-        text-align:center;
       }
       .navW{
         background-color: none;
@@ -19,15 +18,13 @@
         /*margin: 0; /* Remove margin */
         /*display: inline-block; /* Align items horizontally */
         display:flex;
-        text-align:center;
         
       }
       
       nav .navS {
-        display: flex;
+        display: inline-block;
       }
       nav li {
-        text-align: center;
         margin: 2px;
         display:inline;
         /*flex: 1; /* Equal width for each link */
@@ -36,7 +33,7 @@
       nav a {
         display: block; /* Make links fill the list item */
         color: white; /* Text color */
-        text-align: right; /* right text */
+        text-align: center; /* centers text */
       }
       nav a:hover {
         background-color: none; /* Background color on hover */
@@ -59,7 +56,7 @@
           background-color:red;
         }
         nav{
-          background-color:yellow;
+          background-color:violet;
         }
       }
       .subH > div {
@@ -105,7 +102,7 @@
   </head>
 
   <body>
-    <nav class="cont">
+    <nav>
       <ul class="container">
         <li class="card first"><a href="./public/about_me.html">ABOUT</a></li>
         <li class="card second"><a href="./public/contact_me.html">CONTACT</a></li>
